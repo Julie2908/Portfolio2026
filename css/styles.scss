@@ -19,48 +19,72 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 
 // 5. Du kan lave styling her...
 
+body {
+  margin: 0;
+  font-family: Georgia, serif;
+  background: #e5e5e5;
+}
+
+/* NAVBAR */
 .navbar {
   display: flex;
-  justify-content: space-between; /* venstre ↔ højre */
-  align-items: center;            /* lodret centrering */
-
+  justify-content: space-between;
+  align-items: center;
   padding: 20px 40px;
-  background-color: white;
+  border-bottom: 2px solid #333;
+  background: #eee;
 }
 
-/* Navn */
-.logo {
-  font-size: 40px;
-  font-family: Playfair Display;
-}
-
-/* Menu */
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 40px;      /* afstand mellem links */
-  margin: 0;
-  padding: 0;
-}
-
-.nav-links a {
+.navbar a {
+  margin-left: 20px;
   text-decoration: none;
   color: black;
-  font-size: 40px;
-  font-family: Playfair Display;
 }
 
-.overskrift1{
-  background:rgba(115, 157, 85, 0.3);
-  width:100%;
-  height:723px;
+.btn-small {
+  background: #5f7d4f;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+}
+
+/* HERO */
+.hero {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: space-between;
+  padding: 80px 60px;
+  background: #a9b99e;
 }
 
-.portfolio{
-  font-family: Playfair Display;
-  font-size: 150px;
-  color: #000000;
+.hero-text {
+  max-width: 50%;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+/* BUTTON */
+.btn {
+  display: inline-block;
+  padding: 15px 30px;
+  background: #5f7d4f;
+  color: black;
+  border-radius: 30px;
+  text-decoration: none;
+  border: 2px solid black;
+}
+
+/* IMAGE */
+.hero-image img {
+  width: 350px;
+  border-radius: 20px;
 }
