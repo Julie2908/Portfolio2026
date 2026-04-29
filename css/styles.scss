@@ -43,7 +43,7 @@ body {
 
 .btn-small {
   background: #5f7d4f;
-  color: white;
+  color: white !important;
   padding: 8px 16px;
   border-radius: 20px;
 }
@@ -55,6 +55,7 @@ body {
   justify-content: space-between;
   padding: 80px 60px;
   background: #a9b99e;
+  min-height: 80vh;
 }
 
 .hero-text {
@@ -64,6 +65,7 @@ body {
 .hero-text h1 {
   font-size: 48px;
   margin-bottom: 20px;
+  font-family: Playfair;
 }
 
 .hero-text p {
@@ -83,8 +85,16 @@ body {
   border: 2px solid black;
 }
 
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
 /* IMAGE */
 .hero-image img {
-  width: 350px;
+  width: 517px;
+  height: 515px;
+  object-fit: cover;
   border-radius: 20px;
 }
